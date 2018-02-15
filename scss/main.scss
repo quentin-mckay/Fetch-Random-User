@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Coda');
+
+$body-bg-color: #ecf0f1;
+$primary-color: #16a085;
+
+body {
+  margin: 0;
+  background: $body-bg-color;
+
+  font-family: Coda, sans-serif;
+}
+
+.title {
+  text-align: center;
+}
+
+.widget {
+  background: white;
+  margin: 0 auto;
+  max-width: 30rem;
+
+  img {
+    display: block;
+    width: 130px;
+    height: auto;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-family: inherit;
+    background: $primary-color;
+    color: white;
+    font-size: 1rem;
+  }
+
+  button:hover {
+    background: lighten($primary-color, 5%);
+  }
+
+  .user-profile {
+    padding: 14px;
+
+    display: flex;
+    align-items: start;
+  }
+
+  .user-info {
+    margin-left: 1rem;
+  }
+
+  #full-name {
+    font-weight: bold;
+  }
+
+  #username, #email, #city {
+    font-family: Raleway;
+  }
+
+  #username {
+    margin-bottom: 1rem;
+  }
+
+}
